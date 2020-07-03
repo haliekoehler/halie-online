@@ -1,5 +1,11 @@
+$purple: #7130a0;
+
 html, body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.purple {
+  color: $purple;
 }
