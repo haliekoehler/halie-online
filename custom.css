@@ -8,4 +8,12 @@ html, body {
   color: #7130a0;
 }
 
+.button.is-primary {
+  color: #ffffff;
+  background-color: rgba(113, 48, 160, 0.8);
+}
+.button.is-primary:hover {
+  background-color: #7130a0;
+}
+
 /*# sourceMappingURL=custom.css.map */

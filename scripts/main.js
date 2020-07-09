@@ -2,8 +2,6 @@
 
 (function() {
 
-	// const anime = require('animejs');
-
 	anime({
 	  // targets: 'div',
 	  // translateX: 250,

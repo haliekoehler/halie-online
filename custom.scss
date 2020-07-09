@@ -9,3 +9,11 @@ html, body {
 .purple {
   color: $purple;
 }
+
+.button.is-primary {
+  color: #ffffff;
+  background-color: rgba($purple, .8);
+  &:hover {
+      background-color: $purple;
+  }
+}
