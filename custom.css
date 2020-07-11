@@ -10,10 +10,19 @@ html, body {
 
 .button.is-primary {
   color: #ffffff;
-  background-color: rgba(113, 48, 160, 0.8);
+  background-color: #7130a0;
 }
 .button.is-primary:hover {
   background-color: #7130a0;
+}
+.button.is-primary.is-outlined {
+  border-color: #7130a0;
+  color: #7130a0;
+}
+.button.is-primary.is-outlined:hover {
+  background-color: #7130a0;
+  color: #ffffff;
+  border-color: #7130a0;
 }
 
 /*# sourceMappingURL=custom.css.map */

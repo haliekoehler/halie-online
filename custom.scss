@@ -1,4 +1,10 @@
 $purple: #7130a0;
+$dark-purple: #472954;
+$citron: #ab9f1a;
+$light: #fbf9fc;
+$dark: #291626;
+
+$primary: $purple;
 
 html, body {
   position: relative;
@@ -12,8 +18,17 @@ html, body {
 
 .button.is-primary {
   color: #ffffff;
-  background-color: rgba($purple, .8);
+  background-color: $purple;
   &:hover {
       background-color: $purple;
+  }
+  &.is-outlined {
+    border-color: $purple;
+    color: $purple;
+    &:hover {
+        background-color: $purple;
+        color: #ffffff;
+        border-color: $purple;
+    }
   }
 }
