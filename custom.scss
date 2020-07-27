@@ -1,7 +1,7 @@
 $purple: #7130a0;
 $dark-purple: #472954;
 $citron: #ab9f1a;
-$light: #fbf9fc;
+$light: #FDFDF5;
 $dark: #291626;
 
 $primary: $purple;
@@ -10,6 +10,7 @@ html, body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: $light;
 }
 
 .purple {
