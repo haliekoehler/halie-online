@@ -2,6 +2,11 @@
 
 (function() {
 
+	var titleTimeline = anime.timeline({
+		easing: 'spring(0, 10, 75, 2)',
+		duration: 1000
+	});
+	
 	var title = document.getElementById('title');
 
 	anime({
