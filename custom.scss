@@ -2,7 +2,10 @@ $purple: #7130a0;
 $dark-purple: #472954;
 $citron: #ab9f1a;
 $light: #FDFDF5;
-$dark: #291626;
+$dark: #00120B;
+$gray: #8EA8C3;
+$lime: #A2ED6D;
+$blue: #1E3F63;
 
 $primary: $purple;
 
@@ -15,6 +18,33 @@ html, body {
 
 .purple {
   color: $purple;
+}
+
+h1.title {
+  font-size: 3em;
+  font-weight: 400;
+  span {
+    font-weight: 600;
+  }
+}
+
+h2.subtitle {
+  font-weight: 400;
+}
+
+.link {
+  color: rgba($lime, .9);
+  &.icon {
+    padding: .5em;
+    color: $purple;
+      font-size: 3em;
+  }
+  &:hover {
+    color: rgba($lime, 1);
+  }
+  &:active {
+    color: $lime;
+  }
 }
 
 .button.is-primary {
@@ -31,5 +61,12 @@ html, body {
         color: #ffffff;
         border-color: $purple;
     }
+  }
+}
+
+.level {
+  padding: 1em;
+  &.dark {
+    background-color: $gray;
   }
 }

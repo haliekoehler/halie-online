@@ -9,6 +9,33 @@ html, body {
   color: #7130a0;
 }
 
+h1.title {
+  font-size: 3em;
+  font-weight: 400;
+}
+h1.title span {
+  font-weight: 600;
+}
+
+h2.subtitle {
+  font-weight: 400;
+}
+
+.link {
+  color: rgba(162, 237, 109, 0.9);
+}
+.link.icon {
+  padding: 0.5em;
+  color: #7130a0;
+  font-size: 3em;
+}
+.link:hover {
+  color: #a2ed6d;
+}
+.link:active {
+  color: #A2ED6D;
+}
+
 .button.is-primary {
   color: #ffffff;
   background-color: #7130a0;
@@ -24,6 +51,13 @@ html, body {
   background-color: #7130a0;
   color: #ffffff;
   border-color: #7130a0;
+}
+
+.level {
+  padding: 1em;
+}
+.level.dark {
+  background-color: #8EA8C3;
 }
 
 /*# sourceMappingURL=custom.css.map */
