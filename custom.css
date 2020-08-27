@@ -2,7 +2,6 @@ html, body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #FDFDF5;
 }
 
 .purple {
@@ -38,7 +37,9 @@ h2.subtitle {
 
 .button.is-primary {
   color: #ffffff;
-  background-color: #7130a0;
+  background-color: rgba(113, 48, 160, 0.9);
+  border: 1px solid #7130a0;
+  font-weight: 400;
 }
 .button.is-primary:hover {
   background-color: #7130a0;
@@ -58,6 +59,12 @@ h2.subtitle {
 }
 .level.dark {
   background-color: #00120B;
+}
+
+#main-hero {
+  background-image: url("images/purple-cutout.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=custom.css.map */
