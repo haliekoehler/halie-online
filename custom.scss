@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/egs7asl.css");
+
+/* Colors */
 $purple: #7130a0;
 $dark-purple: #472954;
 $citron: #ab9f1a;
@@ -9,10 +12,63 @@ $blue: #1E3F63;
 
 $primary: $purple;
 
+/*******************************************************/
+/******* Breakpoints / Media Query Mixin ***************/
+/*******************************************************/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}
+
 html, body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: montserrat, sans-serif !important;
+}
+
+body#index {
+  background-color: $purple;
 }
 
 .purple {
@@ -20,30 +76,29 @@ html, body {
 }
 
 h1.title {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   color: $gray;
-  text-shadow: 3px 0 10px rbga($dark , .5);
   span {
     color: white;
-    font-weight: 400;
-    text-shadow: 3px 0 10px rbga($dark , .8);
+    font-weight: 500;
+  }
+  @include sm {
+    font-size: 3em;
   }
 }
 
 h2.subtitle {
+  font-size: 1em;
   font-weight: 400;
   color: $gray;
-  text-shadow: 3px 0 10px rbga($dark , .5);
+  @include sm {
+    font-size: 1.25em;
+  }
 }
 
 .link {
   color: rgba($lime, .9);
-  &.icon {
-    padding: .5em;
-    color: $purple;
-      font-size: 3em;
-  }
   &:hover {
     color: rgba($lime, 1);
   }
@@ -52,24 +107,44 @@ h2.subtitle {
   }
 }
 
-.button.is-primary {
-  color: #ffffff;
-  background-color: rgba($purple,.9);
-  border: 1px solid $purple;
-  font-weight: 400;
-  box-shadow: 3px 0 10px rbga($dark , .5);
-  &:hover {
-      background-color: $purple;
-
-  }
-  &.is-outlined {
-    border-color: $purple;
-    color: $purple;
+/* Buttons & Special Links */
+.button {
+    &.is-primary {
+    color: #ffffff;
+    background-color: rgba($purple,.9);
+    border: 1px solid $purple;
+    font-weight: 400;
+    box-shadow: 3px 0 10px rbga($dark , .5);
+    font-size: 1em;
     &:hover {
         background-color: $purple;
-        color: #ffffff;
-        border-color: $purple;
     }
+    &.is-outlined {
+      border-color: $purple;
+      color: $purple;
+      &:hover {
+          background-color: $purple;
+          color: #ffffff;
+          border-color: $purple;
+      }
+    }
+    @include sm {
+      font-size: 1.25em;
+    }
+  }
+}
+
+.link.icon {
+  padding-top: 1.5em;
+  color: rgba($purple, .9);
+  font-size: 2.5em;
+  text-shadow: 0 2px 6px $dark;
+  &:hover {
+    color: $purple;
+    text-shadow: 0 0 4px $dark;
+  }
+  @include md {
+    font-size: 3em;
   }
 }
 
@@ -78,10 +153,19 @@ h2.subtitle {
   &.dark {
     background-color: $dark;
   }
+  @include lg {
+    margin-top: 1em;
+  }
 }
 
 #main-hero {
   background-image: url("images/purple-layers.png");
   background-position: center;
   background-size: cover;
+  .hero-body {
+    padding-top: 3.5rem;
+    @include md {
+      padding-top: 3rem;
+    }
+  }
 }

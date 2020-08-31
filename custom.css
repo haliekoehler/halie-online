@@ -1,7 +1,17 @@
+@import url("https://use.typekit.net/egs7asl.css");
+/* Colors */
+/*******************************************************/
+/******* Breakpoints / Media Query Mixin ***************/
+/*******************************************************/
 html, body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: montserrat, sans-serif !important;
+}
+
+body#index {
+  background-color: #7130a0;
 }
 
 .purple {
@@ -9,30 +19,33 @@ html, body {
 }
 
 h1.title {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   color: #8EA8C3;
-  text-shadow: 3px 0 10px rbga(#00120B, 0.5);
 }
 h1.title span {
   color: white;
-  font-weight: 400;
-  text-shadow: 3px 0 10px rbga(#00120B, 0.8);
+  font-weight: 500;
+}
+@media (min-width: 576px) {
+  h1.title {
+    font-size: 3em;
+  }
 }
 
 h2.subtitle {
+  font-size: 1em;
   font-weight: 400;
   color: #8EA8C3;
-  text-shadow: 3px 0 10px rbga(#00120B, 0.5);
+}
+@media (min-width: 576px) {
+  h2.subtitle {
+    font-size: 1.25em;
+  }
 }
 
 .link {
   color: rgba(162, 237, 109, 0.9);
-}
-.link.icon {
-  padding: 0.5em;
-  color: #7130a0;
-  font-size: 3em;
 }
 .link:hover {
   color: #a2ed6d;
@@ -41,12 +54,14 @@ h2.subtitle {
   color: #A2ED6D;
 }
 
+/* Buttons & Special Links */
 .button.is-primary {
   color: #ffffff;
   background-color: rgba(113, 48, 160, 0.9);
   border: 1px solid #7130a0;
   font-weight: 400;
   box-shadow: 3px 0 10px rbga(#00120B, 0.5);
+  font-size: 1em;
 }
 .button.is-primary:hover {
   background-color: #7130a0;
@@ -60,6 +75,27 @@ h2.subtitle {
   color: #ffffff;
   border-color: #7130a0;
 }
+@media (min-width: 576px) {
+  .button.is-primary {
+    font-size: 1.25em;
+  }
+}
+
+.link.icon {
+  padding-top: 1.5em;
+  color: rgba(113, 48, 160, 0.9);
+  font-size: 2.5em;
+  text-shadow: 0 2px 6px #00120B;
+}
+.link.icon:hover {
+  color: #7130a0;
+  text-shadow: 0 0 4px #00120B;
+}
+@media (min-width: 768px) {
+  .link.icon {
+    font-size: 3em;
+  }
+}
 
 .level {
   padding: 1em;
@@ -67,11 +103,24 @@ h2.subtitle {
 .level.dark {
   background-color: #00120B;
 }
+@media (min-width: 992px) {
+  .level {
+    margin-top: 1em;
+  }
+}
 
 #main-hero {
   background-image: url("images/purple-layers.png");
   background-position: center;
   background-size: cover;
+}
+#main-hero .hero-body {
+  padding-top: 3.5rem;
+}
+@media (min-width: 768px) {
+  #main-hero .hero-body {
+    padding-top: 3rem;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
