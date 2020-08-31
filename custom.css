@@ -11,13 +11,19 @@ html, body {
 h1.title {
   font-size: 3em;
   font-weight: 400;
+  color: #8EA8C3;
+  text-shadow: 3px 0 10px rbga(#00120B, 0.5);
 }
 h1.title span {
-  font-weight: 600;
+  color: #7130a0;
+  font-weight: 400;
+  text-shadow: 3px 0 10px rbga(#00120B, 0.8);
 }
 
 h2.subtitle {
   font-weight: 400;
+  color: #8EA8C3;
+  text-shadow: 3px 0 10px rbga(#00120B, 0.5);
 }
 
 .link {
@@ -40,6 +46,7 @@ h2.subtitle {
   background-color: rgba(113, 48, 160, 0.9);
   border: 1px solid #7130a0;
   font-weight: 400;
+  box-shadow: 3px 0 10px rbga(#00120B, 0.5);
 }
 .button.is-primary:hover {
   background-color: #7130a0;
@@ -62,6 +69,7 @@ h2.subtitle {
 }
 
 #main-hero {
+  background-image: url("images/purple-layers.png");
   background-position: center;
   background-size: cover;
 }
