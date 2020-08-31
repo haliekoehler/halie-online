@@ -15,7 +15,7 @@ h1.title {
   text-shadow: 3px 0 10px rbga(#00120B, 0.5);
 }
 h1.title span {
-  color: #7130a0;
+  color: white;
   font-weight: 400;
   text-shadow: 3px 0 10px rbga(#00120B, 0.8);
 }
