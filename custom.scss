@@ -78,9 +78,9 @@ body#index {
 h1.title {
   font-size: 2em;
   font-weight: 400;
-  color: $gray;
+  color: $light;
   span {
-    color: white;
+    // color: white;
     font-weight: 500;
   }
   @include sm {
@@ -159,13 +159,50 @@ h2.subtitle {
 }
 
 #main-hero {
-  background-image: url("images/purple-layers.png");
+  background-color: $dark;
+  // background-image: url("images/purple-layers.png");
   background-position: center;
   background-size: cover;
   .hero-body {
     padding-top: 3.5rem;
     @include md {
       padding-top: 3rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $light;
+
+    a {
+      font-weight: 500;
+      color: $light;
+      border-bottom: 2px solid;
+      // text-decoration: underline;
+      &#ui {
+        border-color: $lime;
+        &:hover {
+          color: $lime;
+          font-weight: 500;
+          border-width: 3px;
+        }
+      }
+      &#fr {
+        border-color: $gray;
+        &:hover {
+          color: $gray;
+          font-weight: 500;
+          border-width: 3px;
+        }
+      }
+      &#vi {
+        border-color: $blue;
+        &:hover {
+          color: $blue;
+          font-weight: 500;
+          border-width: 3px;
+        }
+      }
     }
   }
 }

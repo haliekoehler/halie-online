@@ -21,10 +21,9 @@ body#index {
 h1.title {
   font-size: 2em;
   font-weight: 400;
-  color: #8EA8C3;
+  color: #FDFDF5;
 }
 h1.title span {
-  color: white;
   font-weight: 500;
 }
 @media (min-width: 576px) {
@@ -110,7 +109,7 @@ h2.subtitle {
 }
 
 #main-hero {
-  background-image: url("images/purple-layers.png");
+  background-color: #00120B;
   background-position: center;
   background-size: cover;
 }
@@ -121,6 +120,39 @@ h2.subtitle {
   #main-hero .hero-body {
     padding-top: 3rem;
   }
+}
+#main-hero h2 {
+  font-size: 2rem;
+  color: #FDFDF5;
+}
+#main-hero h2 a {
+  font-weight: 500;
+  color: #FDFDF5;
+  border-bottom: 2px solid;
+}
+#main-hero h2 a#ui {
+  border-color: #A2ED6D;
+}
+#main-hero h2 a#ui:hover {
+  color: #A2ED6D;
+  font-weight: 500;
+  border-width: 3px;
+}
+#main-hero h2 a#fr {
+  border-color: #8EA8C3;
+}
+#main-hero h2 a#fr:hover {
+  color: #8EA8C3;
+  font-weight: 500;
+  border-width: 3px;
+}
+#main-hero h2 a#vi {
+  border-color: #1E3F63;
+}
+#main-hero h2 a#vi:hover {
+  color: #1E3F63;
+  font-weight: 500;
+  border-width: 3px;
 }
 
 /*# sourceMappingURL=custom.css.map */
