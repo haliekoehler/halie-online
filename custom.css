@@ -10,10 +10,6 @@ html, body {
   font-family: montserrat, sans-serif !important;
 }
 
-body#index {
-  background-color: #7130a0;
-}
-
 .purple {
   color: #7130a0;
 }
@@ -24,7 +20,7 @@ h1.title {
   color: #FDFDF5;
 }
 h1.title span {
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   h1.title {
@@ -35,12 +31,15 @@ h1.title span {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #8EA8C3;
+  color: #FDFDF5;
 }
 @media (min-width: 576px) {
   h2.subtitle {
     font-size: 1.25em;
   }
+}
+h2.subtitle span {
+  font-size: 2em;
 }
 
 .link {
@@ -81,8 +80,6 @@ h2.subtitle {
 }
 
 .link.icon {
-  padding-top: 1.5em;
-  color: rgba(113, 48, 160, 0.9);
   font-size: 2.5em;
   text-shadow: 0 2px 6px #00120B;
 }
@@ -96,20 +93,12 @@ h2.subtitle {
   }
 }
 
-.level {
-  padding: 1em;
-}
 .level.dark {
   background-color: #00120B;
 }
-@media (min-width: 992px) {
-  .level {
-    margin-top: 1em;
-  }
-}
-
 #main-hero {
   background-color: #00120B;
+  background-image: url("images/organic-layers-background.png");
   background-position: center;
   background-size: cover;
 }

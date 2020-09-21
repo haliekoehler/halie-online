@@ -68,7 +68,7 @@ html, body {
 }
 
 body#index {
-  background-color: $purple;
+  // background-color: $purple;
 }
 
 .purple {
@@ -81,7 +81,7 @@ h1.title {
   color: $light;
   span {
     // color: white;
-    font-weight: 500;
+    font-weight: 600;
   }
   @include sm {
     font-size: 3em;
@@ -91,9 +91,13 @@ h1.title {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: $gray;
+  color: $light;
   @include sm {
     font-size: 1.25em;
+  }
+
+  span {
+    font-size: 2em;
   }
 }
 
@@ -135,8 +139,8 @@ h2.subtitle {
 }
 
 .link.icon {
-  padding-top: 1.5em;
-  color: rgba($purple, .9);
+  // padding-top: 1.5em;
+  // color: rgba($purple, .9);
   font-size: 2.5em;
   text-shadow: 0 2px 6px $dark;
   &:hover {
@@ -149,18 +153,18 @@ h2.subtitle {
 }
 
 .level {
-  padding: 1em;
+  // padding: 1em;
   &.dark {
     background-color: $dark;
   }
   @include lg {
-    margin-top: 1em;
+    // margin-top: 1em;
   }
 }
 
 #main-hero {
   background-color: $dark;
-  // background-image: url("images/purple-layers.png");
+  background-image: url("images/organic-layers-background.png");
   background-position: center;
   background-size: cover;
   .hero-body {
