@@ -10,6 +10,10 @@ html, body {
   font-family: montserrat, sans-serif !important;
 }
 
+body#index {
+  background-color: #7130a0;
+}
+
 .purple {
   color: #7130a0;
 }
@@ -76,11 +80,13 @@ a.link.icon {
 .level.dark {
   background-color: #00120B;
 }
+#hero-header span {
+  color: #7130a0;
+  font-size: 1.2em;
+}
+
 #main-hero {
   background-color: #00120B;
-  background-image: url("images/organic-layers-background.png");
-  background-position: center;
-  background-size: cover;
 }
 #main-hero .hero-body {
   padding-top: 3.5rem;

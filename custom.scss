@@ -70,7 +70,7 @@ html, body {
 }
 
 body#index {
-  // background-color: $purple;
+  background-color: $purple;
 }
 
 .purple {
@@ -168,11 +168,18 @@ a.link.icon {
   }
 }
 
+#hero-header {
+  span{
+    color: $purple;
+    font-size: 1.2em;
+  }
+}
+
 #main-hero {
   background-color: $dark;
-  background-image: url("images/organic-layers-background.png");
-  background-position: center;
-  background-size: cover;
+  // background-image: url("images/organic-layers-background.png");
+  // background-position: center;
+  // background-size: cover;
   .hero-body {
     padding-top: 3.5rem;
     @include md {
