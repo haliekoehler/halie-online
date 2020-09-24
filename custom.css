@@ -42,14 +42,8 @@ h2.subtitle span {
   font-size: 2em;
 }
 
-.link {
-  color: rgba(162, 237, 109, 0.9);
-}
-.link:hover {
-  color: #a2ed6d;
-}
-.link:active {
-  color: #A2ED6D;
+a.link.icon {
+  color: #368AF5;
 }
 
 /* Buttons & Special Links */
@@ -76,20 +70,6 @@ h2.subtitle span {
 @media (min-width: 576px) {
   .button.is-primary {
     font-size: 1.25em;
-  }
-}
-
-.link.icon {
-  font-size: 2.5em;
-  text-shadow: 0 2px 6px #00120B;
-}
-.link.icon:hover {
-  color: #7130a0;
-  text-shadow: 0 0 4px #00120B;
-}
-@media (min-width: 768px) {
-  .link.icon {
-    font-size: 3em;
   }
 }
 
