@@ -2,10 +2,20 @@
 
 (function() {
 
+let status = 'active';
+
+function animationStatus() {
+	if (status = 'active') {
+		status = 'complete'
+	}
+	console.log(status);
+}
+
 new TypeIt("#hero-header", {
 	speed: 45,
 	lifelike: true,
-	html: true
+	html: true,
+	deleteSpeed: 80
 })
 .type("Hello.")
 .pause(250)
@@ -14,11 +24,10 @@ new TypeIt("#hero-header", {
 .break()
 .type("a ")
 .pause(60)
-.type("Designer.")
-.pause(200)
-.options({speed:100})
-.delete(9)
 .options({speed: 80})
+.type("Designer.")
+.pause(500)
+.delete(9)
 .type("UI/UX Designer.")
 .pause(500)
 .delete(1)
@@ -31,8 +40,9 @@ new TypeIt("#hero-header", {
 .type(" and")
 .pause(300)
 .type(" Visual Artist.")
-.pause(5000)
+.pause(3500)
 .options({afterComplete: function(step, instance) {
+	animationStatus();
 	instance.destroy();
 }})
 .go();
