@@ -4,12 +4,60 @@
 
 let status = 'active';
 
+// fade out
+function fadeOut(el){
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .1) < 0) {
+      el.style.display = 'none';
+      el.classList.add('hidden');
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+
+// fade in
+function fadeIn(el, display){
+  if (el.classList.contains('hidden')){
+    el.classList.remove('hidden');
+  }
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+
 function animationStatus() {
+	let el = document.getElementById('links');
+	
 	if (status = 'active') {
 		status = 'complete'
 	}
-	console.log(status);
+	// console.log(status);
+	if (status = 'complete') {
+		fadeIn(el);
+	}
 }
+
+// var btn = document.querySelector('.js-btn');
+// var el = document.querySelector('.js-fade');
+//
+// btn.addEventListener('click', function(e){
+//   if(el.classList.contains('is-hidden')){
+//     fadeIn(el);
+//   }
+//   else {
+//     fadeOut(el);
+//   }
+// });
 
 new TypeIt("#hero-header", {
 	speed: 45,
@@ -40,7 +88,7 @@ new TypeIt("#hero-header", {
 .type(" and")
 .pause(300)
 .type(" Visual Artist.")
-.pause(3500)
+.pause(1500)
 .options({afterComplete: function(step, instance) {
 	animationStatus();
 	instance.destroy();

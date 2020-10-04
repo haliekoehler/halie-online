@@ -10,14 +10,7 @@ html, body {
   font-family: montserrat, sans-serif !important;
 }
 
-body#index {
-  background-color: #7130a0;
-}
-
-.purple {
-  color: #7130a0;
-}
-
+/* Headers and Such */
 h1.title {
   font-size: 2em;
   font-weight: 400;
@@ -48,6 +41,19 @@ h2.subtitle span {
 
 a.link.icon {
   color: #368AF5;
+  font-size: 2em;
+  margin: 1em;
+}
+a.link.icon:hover {
+  color: #A2ED6D;
+}
+
+.purple {
+  color: #7130a0;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Buttons & Special Links */
