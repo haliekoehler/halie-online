@@ -40,7 +40,7 @@ h2.subtitle span {
 }
 
 a.link.icon {
-  color: #368AF5;
+  color: #7130a0;
   font-size: 2em;
   margin: 1em;
 }
@@ -86,6 +86,10 @@ a.link.icon:hover {
 .level.dark {
   background-color: #00120B;
 }
+#index {
+  background-color: #00120B;
+}
+
 #hero-header span {
   color: #7130a0;
   font-size: 1.2em;

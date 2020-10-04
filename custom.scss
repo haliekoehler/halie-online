@@ -97,7 +97,7 @@ h2.subtitle {
 }
 
 a.link.icon {
-  color: $light-blue;
+  color: $purple;
   font-size: 2em;
   margin: 1em;
 
@@ -149,6 +149,10 @@ a.link.icon {
   @include lg {
     // margin-top: 1em;
   }
+}
+
+#index {
+  background-color: $dark;
 }
 
 #hero-header {
