@@ -37,7 +37,7 @@ function fadeIn(el, display){
 
 function animationStatus() {
 	let el = document.getElementById('links');
-	
+
 	if (status = 'active') {
 		status = 'complete'
 	}
@@ -72,10 +72,10 @@ new TypeIt("#hero-header", {
 .break()
 .type("a ")
 .pause(60)
-.options({speed: 80})
-.type("Designer.")
-.pause(500)
-.delete(9)
+// .options({speed: 80})
+// .type("Designer.")
+// .pause(500)
+// .delete(9)
 .type("UI/UX Designer.")
 .pause(500)
 .delete(1)

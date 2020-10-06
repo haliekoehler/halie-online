@@ -12,7 +12,7 @@ html, body {
 
 /* Headers and Such */
 h1.title {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 400;
   color: #FDFDF5;
 }
@@ -20,6 +20,11 @@ h1.title span {
   font-weight: 600;
 }
 @media (min-width: 576px) {
+  h1.title {
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
   h1.title {
     font-size: 3em;
   }
@@ -39,13 +44,20 @@ h2.subtitle span {
   font-size: 2em;
 }
 
-a.link.icon {
+a.link {
   color: #7130a0;
-  font-size: 2em;
+  font-size: 1.2em;
+}
+a.link.icon {
   margin: 1em;
 }
-a.link.icon:hover {
+a.link:hover {
   color: #A2ED6D;
+}
+@media (min-width: 576px) {
+  a.link {
+    font-size: 2em;
+  }
 }
 
 .purple {
@@ -83,9 +95,25 @@ a.link.icon:hover {
   }
 }
 
-.level.dark {
-  background-color: #00120B;
+nav.is-transparent {
+  background-color: transparent;
 }
+nav a.navbar-item {
+  color: #7130a0;
+}
+nav a.navbar-item:visited, nav a.navbar-item:active {
+  color: #7130a0;
+}
+nav a.navbar-item:hover {
+  color: #A2ED6D;
+}
+nav .navbar-burger {
+  color: #7130a0;
+}
+nav .navbar-burger:hover {
+  color: #A2ED6D;
+}
+
 #index {
   background-color: #00120B;
 }

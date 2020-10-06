@@ -71,7 +71,7 @@ html, body {
 
 /* Headers and Such */
 h1.title {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 400;
   color: $light;
   span {
@@ -79,6 +79,10 @@ h1.title {
     font-weight: 600;
   }
   @include sm {
+    font-size: 2em;
+  }
+
+  @include md {
     font-size: 3em;
   }
 }
@@ -96,13 +100,22 @@ h2.subtitle {
   }
 }
 
-a.link.icon {
-  color: $purple;
-  font-size: 2em;
-  margin: 1em;
+a {
+  &.link {
+    color: $purple;
+    font-size: 1.2em;
 
-  &:hover{
-    color: $lime;
+    &.icon {
+      margin: 1em;
+    }
+
+    &:hover{
+      color: $lime;
+    }
+
+    @include sm {
+      font-size: 2em;
+    }
   }
 }
 
@@ -141,14 +154,27 @@ a.link.icon {
   }
 }
 
-.level {
-  // padding: 1em;
-  &.dark {
-    background-color: $dark;
-  }
-  @include lg {
-    // margin-top: 1em;
-  }
+nav  {
+    &.is-transparent  {
+      background-color: transparent;
+    }
+
+    a.navbar-item  {
+      color: $purple;
+      &:visited,&:active {
+        color: $purple;
+      }
+      &:hover  {
+        color:  $lime;
+      }
+    }
+
+    .navbar-burger {
+      color:  $purple;
+      &:hover {
+        color: $lime;
+      }
+    }
 }
 
 #index {
