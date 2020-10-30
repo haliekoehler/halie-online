@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/egs7asl.css");
+
+/* Colors */
+$purple: #7130a0;
+$dark-purple: #472954;
+$citron: #ab9f1a;
+$light: #FDFDF5;
+$dark: #00120B;
+$gray: #8EA8C3;
+$lime: #A2ED6D;
+$blue: #1E3F63;
+
+$light-blue: #368AF5;
+
+$primary: $purple;
+
+/*******************************************************/
+/******* Breakpoints / Media Query Mixin ***************/
+/*******************************************************/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;

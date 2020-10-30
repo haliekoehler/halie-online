@@ -1,0 +1,61 @@
+
+html, body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: montserrat, sans-serif !important;
+}
+
+/* Headers and Such */
+h1.title {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $light;
+  span {
+    // color: white;
+    font-weight: 600;
+  }
+  @include sm {
+    font-size: 2em;
+  }
+
+  @include md {
+    font-size: 3em;
+  }
+}
+
+h2.subtitle {
+  font-size: 1em;
+  font-weight: 400;
+  color: $light;
+  @include sm {
+    font-size: 1.25em;
+  }
+
+  span {
+    font-size: 2em;
+  }
+}
+
+a {
+  &.link {
+    color: $purple;
+    font-size: 1.2em;
+
+    &:hover{
+      color: $lime;
+    }
+
+    @include sm {
+      font-size: 2em;
+    }
+  }
+}
+
+.purple {
+  color: $purple;
+}
+
+.hidden {
+  display: none;
+}
