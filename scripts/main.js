@@ -4,36 +4,36 @@
 
 let status = 'active';
 
-// fade out
-function fadeOut(el){
-  el.style.opacity = 1;
-
-  (function fade() {
-    if ((el.style.opacity -= .1) < 0) {
-      el.style.display = 'none';
-      el.classList.add('hidden');
-    } else {
-      requestAnimationFrame(fade);
-    }
-  })();
-}
-
-// fade in
-function fadeIn(el, display){
-  if (el.classList.contains('hidden')){
-    el.classList.remove('hidden');
-  }
-  el.style.opacity = 0;
-  el.style.display = display || "block";
-
-  (function fade() {
-    var val = parseFloat(el.style.opacity);
-    if (!((val += .1) > 1)) {
-      el.style.opacity = val;
-      requestAnimationFrame(fade);
-    }
-  })();
-}
+// // fade out
+// function fadeOut(el){
+//   el.style.opacity = 1;
+//
+//   (function fade() {
+//     if ((el.style.opacity -= .1) < 0) {
+//       el.style.display = 'none';
+//       el.classList.add('hidden');
+//     } else {
+//       requestAnimationFrame(fade);
+//     }
+//   })();
+// }
+//
+// // fade in
+// function fadeIn(el, display){
+//   if (el.classList.contains('hidden')){
+//     el.classList.remove('hidden');
+//   }
+//   el.style.opacity = 0;
+//   el.style.display = display || "block";
+//
+//   (function fade() {
+//     var val = parseFloat(el.style.opacity);
+//     if (!((val += .1) > 1)) {
+//       el.style.opacity = val;
+//       requestAnimationFrame(fade);
+//     }
+//   })();
+// }
 
 function animationStatus() {
 	let el = document.getElementById('links');

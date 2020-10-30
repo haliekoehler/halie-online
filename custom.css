@@ -48,9 +48,6 @@ a.link {
   color: #7130a0;
   font-size: 1.2em;
 }
-a.link.icon {
-  margin: 1em;
-}
 a.link:hover {
   color: #A2ED6D;
 }
@@ -120,7 +117,6 @@ nav .navbar-burger:hover {
 
 #hero-header span {
   color: #7130a0;
-  font-size: 1.2em;
 }
 
 #main-hero {
@@ -158,6 +154,21 @@ nav .navbar-burger:hover {
   color: #1E3F63;
   font-weight: 500;
   border-width: 3px;
+}
+
+#icons a.icon {
+  display: block;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  #icons a.icon {
+    display: block;
+  }
+}
+
+#links .a {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=custom.css.map */

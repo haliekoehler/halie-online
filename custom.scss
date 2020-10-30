@@ -105,9 +105,9 @@ a {
     color: $purple;
     font-size: 1.2em;
 
-    &.icon {
-      margin: 1em;
-    }
+    // &.icon {
+    //   margin: 1em;
+    // }
 
     &:hover{
       color: $lime;
@@ -184,7 +184,7 @@ nav  {
 #hero-header {
   span{
     color: $purple;
-    font-size: 1.2em;
+    // font-size: 1.2em;
   }
 }
 
@@ -225,5 +225,24 @@ nav  {
         }
       }
     }
+  }
+}
+
+#icons{
+  a.icon {
+    display: block;
+    margin-bottom: 1em;
+    display: inline-block;
+
+    @include md {
+      display: block;
+    }
+  }
+}
+
+#links {
+
+  .a{
+    margin-bottom: 1em;
   }
 }
