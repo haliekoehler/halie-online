@@ -80,7 +80,7 @@ new TypeIt("#hero-header", {
 .type(" Visual Artist.")
 .pause(1500)
 .options({afterComplete: function(step, instance) {
-	animationStatus();
+	// animationStatus();
 	instance.destroy();
 }})
 .go();

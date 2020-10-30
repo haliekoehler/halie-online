@@ -1,0 +1,26 @@
+/* Buttons & Special Links */
+.button {
+    &.is-primary {
+    color: #ffffff;
+    background-color: rgba($purple,.9);
+    border: 1px solid $purple;
+    font-weight: 400;
+    box-shadow: 3px 0 10px rbga($dark , .5);
+    font-size: 1em;
+    &:hover {
+        background-color: $purple;
+    }
+    &.is-outlined {
+      border-color: $purple;
+      color: $purple;
+      &:hover {
+          background-color: $purple;
+          color: #ffffff;
+          border-color: $purple;
+      }
+    }
+    @include sm {
+      font-size: 1.25em;
+    }
+  }
+}

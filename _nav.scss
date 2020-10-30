@@ -1,0 +1,22 @@
+nav  {
+    &.is-transparent  {
+      background-color: transparent;
+    }
+
+    a.navbar-item  {
+      color: $purple;
+      &:visited,&:active {
+        color: $purple;
+      }
+      &:hover  {
+        color:  $lime;
+      }
+    }
+
+    .navbar-burger {
+      color:  $purple;
+      &:hover {
+        color: $lime;
+      }
+    }
+}

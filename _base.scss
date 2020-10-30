@@ -1,0 +1,124 @@
+@import url("https://use.typekit.net/egs7asl.css");
+
+/* Colors */
+$purple: #7130a0;
+$dark-purple: #472954;
+$citron: #ab9f1a;
+$light: #FDFDF5;
+$dark: #00120B;
+$gray: #8EA8C3;
+$lime: #A2ED6D;
+$blue: #1E3F63;
+
+$light-blue: #368AF5;
+
+$primary: $purple;
+
+/*******************************************************/
+/******* Breakpoints / Media Query Mixin ***************/
+/*******************************************************/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}
+
+html, body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: montserrat, sans-serif !important;
+}
+
+/* Headers and Such */
+h1.title {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $light;
+  span {
+    // color: white;
+    font-weight: 600;
+  }
+  @include sm {
+    font-size: 2em;
+  }
+
+  @include md {
+    font-size: 3em;
+  }
+}
+
+h2.subtitle {
+  font-size: 1em;
+  font-weight: 400;
+  color: $light;
+  @include sm {
+    font-size: 1.25em;
+  }
+
+  span {
+    font-size: 2em;
+  }
+}
+
+a {
+  &.link {
+    color: $purple;
+    font-size: 1.2em;
+
+    &:hover{
+      color: $lime;
+    }
+
+    @include sm {
+      font-size: 2em;
+    }
+  }
+}
+
+.purple {
+  color: $purple;
+}
+
+.hidden {
+  display: none;
+}
