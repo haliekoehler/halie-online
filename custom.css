@@ -21,10 +21,15 @@ h1.title span {
 }
 @media (min-width: 576px) {
   h1.title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 @media (min-width: 768px) {
+  h1.title {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 992px) {
   h1.title {
     font-size: 3em;
   }
@@ -114,61 +119,53 @@ nav .navbar-burger:hover {
 #index {
   background-color: #00120B;
 }
-
-#hero-header span {
+#index .container {
+  max-width: 1600px;
+}
+#index h1#hero-header {
+  margin-bottom: 1em;
+}
+#index h1#hero-header span {
   color: #7130a0;
 }
-
-#main-hero {
-  background-color: #00120B;
+#index #text {
+  height: 100%;
+  min-height: 20vh;
 }
-#main-hero h2 {
-  font-size: 2rem;
-  color: #FDFDF5;
-}
-#main-hero h2 a {
+#index #links a {
   font-weight: 500;
-  color: #FDFDF5;
-  border-bottom: 2px solid;
-}
-#main-hero h2 a#ui {
-  border-color: #A2ED6D;
-}
-#main-hero h2 a#ui:hover {
-  color: #A2ED6D;
-  font-weight: 500;
-  border-width: 3px;
-}
-#main-hero h2 a#fr {
-  border-color: #8EA8C3;
-}
-#main-hero h2 a#fr:hover {
-  color: #8EA8C3;
-  font-weight: 500;
-  border-width: 3px;
-}
-#main-hero h2 a#vi {
-  border-color: #1E3F63;
-}
-#main-hero h2 a#vi:hover {
-  color: #1E3F63;
-  font-weight: 500;
-  border-width: 3px;
-}
-
-#icons a.icon {
-  display: block;
   margin-bottom: 1em;
+  padding: 1em;
+  font-size: 1.1em;
+  white-space: nowrap;
+}
+@media (min-width: 576px) {
+  #index #links a {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 768px) {
+  #index #links a {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 992px) {
+  #index #links a {
+    display: block;
+    padding-top: 0;
+    font-size: 2em;
+  }
+}
+#index #icons a.icon {
+  margin-bottom: 1em;
+  padding: 1em;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  #icons a.icon {
+  #index #icons a.icon {
     display: block;
+    padding-top: 0;
   }
-}
-
-#links .a {
-  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=custom.css.map */

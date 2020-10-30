@@ -16,10 +16,14 @@ h1.title {
     font-weight: 600;
   }
   @include sm {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   @include md {
+    font-size: 2.5em;
+  }
+
+  @include lg {
     font-size: 3em;
   }
 }
