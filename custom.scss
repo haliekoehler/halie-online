@@ -191,13 +191,6 @@ nav  {
 #main-hero {
   background-color: $dark;
 
-  .hero-body {
-    padding-top: 3.5rem;
-    @include md {
-      padding-top: 3rem;
-    }
-  }
-
   h2 {
     font-size: 2rem;
     color: $light;

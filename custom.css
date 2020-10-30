@@ -126,14 +126,6 @@ nav .navbar-burger:hover {
 #main-hero {
   background-color: #00120B;
 }
-#main-hero .hero-body {
-  padding-top: 3.5rem;
-}
-@media (min-width: 768px) {
-  #main-hero .hero-body {
-    padding-top: 3rem;
-  }
-}
 #main-hero h2 {
   font-size: 2rem;
   color: #FDFDF5;
