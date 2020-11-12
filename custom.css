@@ -14,7 +14,7 @@ html, body {
 h1.title {
   font-size: 1.2em;
   font-weight: 400;
-  color: #FDFDF5;
+  color: #FFF6FF;
 }
 h1.title span {
   font-weight: 600;
@@ -38,7 +38,7 @@ h1.title span {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #FDFDF5;
+  color: #FFF6FF;
 }
 @media (min-width: 576px) {
   h2.subtitle {
@@ -97,75 +97,8 @@ a.link:hover {
   }
 }
 
-nav.is-transparent {
-  background-color: transparent;
-}
-nav a.navbar-item {
-  color: #7130a0;
-}
-nav a.navbar-item:visited, nav a.navbar-item:active {
-  color: #7130a0;
-}
-nav a.navbar-item:hover {
-  color: #A2ED6D;
-}
-nav .navbar-burger {
-  color: #7130a0;
-}
-nav .navbar-burger:hover {
-  color: #A2ED6D;
-}
-
 #index {
-  background-color: #00120B;
-}
-#index .container {
-  max-width: 1600px;
-}
-#index h1#hero-header {
-  margin-bottom: 1em;
-}
-#index h1#hero-header span {
-  color: #7130a0;
-}
-#index #text {
-  height: 100%;
-  min-height: 20vh;
-}
-#index #links a {
-  font-weight: 500;
-  margin-bottom: 1em;
-  padding: 1em;
-  font-size: 1.1em;
-  white-space: nowrap;
-}
-@media (min-width: 576px) {
-  #index #links a {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 768px) {
-  #index #links a {
-    font-size: 1.6em;
-  }
-}
-@media (min-width: 992px) {
-  #index #links a {
-    display: block;
-    padding-top: 0;
-    font-size: 2em;
-  }
-}
-#index #icons a.icon {
-  margin-bottom: 1em;
-  padding: 1em;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  #index #icons a.icon {
-    display: block;
-    padding-top: 0;
-  }
+  background-color: #FFF6FF;
 }
 
 /*# sourceMappingURL=custom.css.map */
