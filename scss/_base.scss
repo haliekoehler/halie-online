@@ -6,14 +6,25 @@ html, body {
   font-family: montserrat, sans-serif !important;
 }
 
+img.image {
+  &.medium {
+    max-width: 400px;
+    height: auto;
+  }
+
+  &.center {
+    margin: 0 auto;
+  }
+}
+
 /* Headers and Such */
 h1.title {
   font-size: 1.2em;
   font-weight: 400;
-  color: $light;
+  // color: $light;
   span {
     // color: white;
-    font-weight: 600;
+    font-weight: 500;
   }
   @include sm {
     font-size: 1.5em;
@@ -31,7 +42,7 @@ h1.title {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: $light;
+  // color: $light;
   @include sm {
     font-size: 1.25em;
   }

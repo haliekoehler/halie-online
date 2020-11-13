@@ -1,22 +1,17 @@
-// nav  {
-//     &.is-transparent  {
-//       background-color: transparent;
-//     }
-//
-//     a.navbar-item  {
-//       color: $purple;
-//       &:visited,&:active {
-//         color: $purple;
-//       }
-//       &:hover  {
-//         color:  $lime;
-//       }
-//     }
-//
-//     .navbar-burger {
-//       color:  $purple;
-//       &:hover {
-//         color: $lime;
-//       }
-//     }
-// }
+.navbar {
+
+	.navbar-item {
+
+		&:hover {
+			background-color: transparent;
+			color: $purple;
+		}
+
+		&.is-active {
+			color: $purple;
+			font-weight: 500;
+			// border-bottom: 1px solid $purple;
+		}
+	}
+
+}

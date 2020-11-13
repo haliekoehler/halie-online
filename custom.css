@@ -10,14 +10,21 @@ html, body {
   font-family: montserrat, sans-serif !important;
 }
 
+img.image.medium {
+  max-width: 400px;
+  height: auto;
+}
+img.image.center {
+  margin: 0 auto;
+}
+
 /* Headers and Such */
 h1.title {
   font-size: 1.2em;
   font-weight: 400;
-  color: #FFF6FF;
 }
 h1.title span {
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (min-width: 576px) {
   h1.title {
@@ -38,7 +45,6 @@ h1.title span {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #FFF6FF;
 }
 @media (min-width: 576px) {
   h2.subtitle {
@@ -95,6 +101,15 @@ a.link:hover {
   .button.is-primary {
     font-size: 1.25em;
   }
+}
+
+.navbar .navbar-item:hover {
+  background-color: transparent;
+  color: #7130a0;
+}
+.navbar .navbar-item.is-active {
+  color: #7130a0;
+  font-weight: 500;
 }
 
 #index {
