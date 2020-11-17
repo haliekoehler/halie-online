@@ -2,16 +2,17 @@
 .button {
     &.is-primary {
     color: #ffffff;
-    background-color: rgba($purple,.9);
-    border: 1px solid $purple;
+    background-color: rgba($purple,1);
     font-weight: 400;
     box-shadow: 3px 0 10px rbga($dark , .5);
-    font-size: 1em;
     &:hover {
-        background-color: $purple;
+        background-color: $dark-purple;
     }
+
     &.is-outlined {
       border-color: $purple;
+      border: 1px solid;
+      // border-radius: 12px;
       color: $purple;
       &:hover {
           background-color: $purple;

@@ -8,30 +8,23 @@ html, body {
 
 /* Headers and Such */
 h1.title {
-  font-size: 1.2em;
-  font-weight: 400;
-  color: $light;
+  // font-weight: 400;
+  font-size: 1.25em;
+  color: $dark;
   span {
     // color: white;
     font-weight: 600;
   }
   @include sm {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
-  @include md {
-    font-size: 2.5em;
-  }
-
-  @include lg {
-    font-size: 3em;
-  }
 }
 
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: $light;
+  color: $dark;
   @include sm {
     font-size: 1.25em;
   }

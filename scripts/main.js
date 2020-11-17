@@ -66,19 +66,19 @@ new TypeIt("#hero-header", {
 	deleteSpeed: 80
 })
 .type("Hello.")
-.pause(250)
+.pause(50)
 .type(" I'm <span>Halie Koehler</span>,")
-.pause(300)
+.pause(100)
 .break()
 .type("a UI/UX Designer,")
-.pause(200)
+.pause(150)
 .options({speed: 45})
-.type(" Front-end Developer,")
-.pause(200)
+.type(" Front End Developer,")
+.pause(150)
 .type(" and")
-.pause(200)
+.pause(100)
 .type(" Visual Artist.")
-.pause(1500)
+.pause(1000)
 .options({afterComplete: function(step, instance) {
 	// animationStatus();
 	instance.destroy();

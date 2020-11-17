@@ -12,33 +12,22 @@ html, body {
 
 /* Headers and Such */
 h1.title {
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #FDFDF5;
+  font-size: 1.25em;
+  color: #00120B;
 }
 h1.title span {
   font-weight: 600;
 }
 @media (min-width: 576px) {
   h1.title {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 768px) {
-  h1.title {
-    font-size: 2.5em;
-  }
-}
-@media (min-width: 992px) {
-  h1.title {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #FDFDF5;
+  color: #00120B;
 }
 @media (min-width: 576px) {
   h2.subtitle {
@@ -73,17 +62,16 @@ a.link:hover {
 /* Buttons & Special Links */
 .button.is-primary {
   color: #ffffff;
-  background-color: rgba(113, 48, 160, 0.9);
-  border: 1px solid #7130a0;
+  background-color: #7130a0;
   font-weight: 400;
   box-shadow: 3px 0 10px rbga(#00120B, 0.5);
-  font-size: 1em;
 }
 .button.is-primary:hover {
-  background-color: #7130a0;
+  background-color: #472954;
 }
 .button.is-primary.is-outlined {
   border-color: #7130a0;
+  border: 1px solid;
   color: #7130a0;
 }
 .button.is-primary.is-outlined:hover {
@@ -97,36 +85,32 @@ a.link:hover {
   }
 }
 
-nav.is-transparent {
-  background-color: transparent;
-}
 nav a.navbar-item {
   color: #7130a0;
+  font-weight: 500;
 }
 nav a.navbar-item:visited, nav a.navbar-item:active {
   color: #7130a0;
 }
 nav a.navbar-item:hover {
-  color: #A2ED6D;
+  color: #472954;
 }
 nav .navbar-burger {
   color: #7130a0;
 }
 nav .navbar-burger:hover {
-  color: #A2ED6D;
+  color: #472954;
 }
 
 #index {
-  background-color: #00120B;
-}
-#index .container {
-  max-width: 1600px;
-}
-#index h1#hero-header {
-  margin-bottom: 1em;
+  background-color: #FDFDF5;
 }
 #index h1#hero-header span {
   color: #7130a0;
+}
+#index #main-hero .container {
+  max-width: 800px;
+  min-height: 20vh;
 }
 #index #text {
   height: 100%;

@@ -1,18 +1,24 @@
 #index {
-  background-color: $dark;
+  background-color: $light;
 
 	.container {
-		max-width: 1600px;
 	}
 
 	h1#hero-header {
-    margin-bottom: 1em;
-
 	  span{
 	    color: $purple;
 	  }
 	}
 
+  #main-hero {
+    .container {
+      max-width: 800px;
+      min-height: 20vh;
+      @include md{
+
+      }
+    }
+  }
 
 	#text {
 		height: 100%;
