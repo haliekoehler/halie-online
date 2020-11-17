@@ -59,6 +59,15 @@ a.link:hover {
   display: none;
 }
 
+.card .title {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.card .text {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
 /* Buttons & Special Links */
 .button.is-primary {
   color: #ffffff;
@@ -102,9 +111,6 @@ nav .navbar-burger:hover {
   color: #472954;
 }
 
-#index {
-  background-color: #FDFDF5;
-}
 #index h1#hero-header span {
   color: #7130a0;
 }
