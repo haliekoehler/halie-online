@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/egs7asl.css");
-/* Colors */
+/* Original Colors */
+/* From Colorspace Palettes */
+/* More color schemes base on $purple -> https://mycolor.space/?hex=%236733D8&sub=1 */
 /*******************************************************/
 /******* Breakpoints / Media Query Mixin ***************/
 /*******************************************************/
@@ -12,8 +14,9 @@ html, body {
 
 /* Headers and Such */
 h1.title {
+  font-weight: 400;
   font-size: 1.25em;
-  color: #00120B;
+  color: #1F1926;
 }
 h1.title span {
   font-weight: 600;
@@ -27,23 +30,20 @@ h1.title span {
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #00120B;
+  color: #1F1926;
 }
 @media (min-width: 576px) {
   h2.subtitle {
     font-size: 1.25em;
   }
 }
-h2.subtitle span {
-  font-size: 2em;
-}
 
 a.link {
-  color: #7130a0;
+  color: #6733D8;
   font-size: 1.2em;
 }
 a.link:hover {
-  color: #A2ED6D;
+  color: #8D53FC;
 }
 @media (min-width: 576px) {
   a.link {
@@ -52,11 +52,23 @@ a.link:hover {
 }
 
 .purple {
-  color: #7130a0;
+  color: #6733D8;
 }
 
 .hidden {
   display: none;
+}
+
+#icon-level {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+#icon-level a.icon {
+  padding: 1em;
+}
+#icon-level a.icon i {
+  font-size: 1.1em;
 }
 
 .card .title {
@@ -71,22 +83,22 @@ a.link:hover {
 /* Buttons & Special Links */
 .button.is-primary {
   color: #ffffff;
-  background-color: #7130a0;
+  background-color: #6733d8;
   font-weight: 400;
-  box-shadow: 3px 0 10px rbga(#00120B, 0.5);
+  box-shadow: 3px 0 10px rbga(#1F1926, 0.5);
 }
 .button.is-primary:hover {
-  background-color: #472954;
+  background-color: #372B47;
 }
 .button.is-primary.is-outlined {
-  border-color: #7130a0;
+  border-color: #6733D8;
   border: 1px solid;
-  color: #7130a0;
+  color: #6733D8;
 }
 .button.is-primary.is-outlined:hover {
-  background-color: #7130a0;
+  background-color: #6733D8;
   color: #ffffff;
-  border-color: #7130a0;
+  border-color: #6733D8;
 }
 @media (min-width: 576px) {
   .button.is-primary {
@@ -94,25 +106,30 @@ a.link:hover {
   }
 }
 
+nav.navbar {
+  padding: 1.25em;
+}
 nav a.navbar-item {
-  color: #7130a0;
+  color: #6733D8;
   font-weight: 500;
+  padding: 1em 1.5em;
 }
 nav a.navbar-item:visited, nav a.navbar-item:active {
-  color: #7130a0;
+  color: #6733D8;
 }
 nav a.navbar-item:hover {
-  color: #472954;
+  color: #8D53FC;
+  background-color: rgba(176, 168, 185, 0.25);
 }
 nav .navbar-burger {
-  color: #7130a0;
+  color: #6733D8;
 }
 nav .navbar-burger:hover {
-  color: #472954;
+  color: #8D53FC;
 }
 
 #index h1#hero-header span {
-  color: #7130a0;
+  color: #6733D8;
 }
 #index #main-hero .container {
   max-width: 800px;

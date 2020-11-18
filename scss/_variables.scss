@@ -1,18 +1,42 @@
 @import url("https://use.typekit.net/egs7asl.css");
 
-/* Colors */
-$purple: #7130a0;
-$dark-purple: #472954;
-$citron: #ab9f1a;
-$light: #FDFDF5;
-$dark: #00120B;
-$gray: #8EA8C3;
-$lime: #A2ED6D;
-$blue: #1E3F63;
+/* Original Colors */
 
-$light-blue: #368AF5;
+// $purple: #7130a0;
+// $dark-purple: #472954;
+// $citron: #ab9f1a;
+// $light: #FDFDF5;
+// $dark: #00120B;
+// $gray: #8EA8C3;
+// $lime: #A2ED6D;
+// $blue: #1E3F63;
+// $light-blue: #368AF5;
 
-$primary: $purple;
+
+/* From Colorspace Palettes */
+/* More color schemes base on $purple -> https://mycolor.space/?hex=%236733D8&sub=1 */
+
+$purple: #6733D8;
+$brighter: #8D53FC; // shades palette
+$dark-purple: #372B47; // cube palette
+
+$light: #FEF6FF; // natural palette
+$dark: #1F1926; //natural palette
+
+$gray: #B0A8B9; // grey friends palette
+$dark-gray: #4B4453; // grey friends palette
+$dust-gray: #7B7484; // dust palette
+
+$light-blue: #DFF1F8; // small switch palette
+$blue: #398BA6; // small switch palette
+
+$red-orange: #FF3625; // dust palette
+$orange-brown: #954300; // threedom palette
+$pine-green: #00726A; // threedom palette
+
+
+
+
 
 /*******************************************************/
 /******* Breakpoints / Media Query Mixin ***************/

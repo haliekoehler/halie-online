@@ -1,20 +1,30 @@
 nav  {
 
-    a.navbar-item  {
+  &.navbar {
+    padding: 1.25em;
+  }
+
+  a.navbar-item  {
+    color: $purple;
+    font-weight: 500;
+    padding: 1em 1.5em;
+
+    &:visited,
+    &:active {
       color: $purple;
-      font-weight: 500;
-      &:visited,&:active {
-        color: $purple;
-      }
-      &:hover  {
-        color:  $dark-purple;
-      }
     }
 
-    .navbar-burger {
-      color:  $purple;
-      &:hover {
-        color: $dark-purple;
-      }
+    &:hover  {
+      color:  $brighter;
+      background-color: rgba($gray, .25);
     }
+  }
+
+  .navbar-burger {
+    color:  $purple;
+    &:hover {
+      color: $brighter;
+    }
+  }
+
 }

@@ -8,17 +8,15 @@ html, body {
 
 /* Headers and Such */
 h1.title {
-  // font-weight: 400;
+  font-weight: 400;
   font-size: 1.25em;
   color: $dark;
   span {
-    // color: white;
     font-weight: 600;
   }
   @include sm {
     font-size: 2em;
   }
-
 }
 
 h2.subtitle {
@@ -28,10 +26,6 @@ h2.subtitle {
   @include sm {
     font-size: 1.25em;
   }
-
-  span {
-    font-size: 2em;
-  }
 }
 
 a {
@@ -40,13 +34,14 @@ a {
     font-size: 1.2em;
 
     &:hover{
-      color: $lime;
+      color: $brighter;
     }
 
     @include sm {
       font-size: 2em;
     }
   }
+
 }
 
 .purple {
@@ -55,6 +50,20 @@ a {
 
 .hidden {
   display: none;
+}
+
+#icon-level {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.5em;
+
+  a.icon {
+    padding: 1em;
+
+    i {
+      font-size: 1.1em;
+    }
+  }
 }
 
 .card {

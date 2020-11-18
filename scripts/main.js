@@ -1,88 +1,27 @@
 'use strict';
 
-(function() {
+document.addEventListener('DOMContentLoaded', () => {
 
-let status = 'active';
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-// // fade out
-// function fadeOut(el){
-//   el.style.opacity = 1;
-//
-//   (function fade() {
-//     if ((el.style.opacity -= .1) < 0) {
-//       el.style.display = 'none';
-//       el.classList.add('hidden');
-//     } else {
-//       requestAnimationFrame(fade);
-//     }
-//   })();
-// }
-//
-// // fade in
-// function fadeIn(el, display){
-//   if (el.classList.contains('hidden')){
-//     el.classList.remove('hidden');
-//   }
-//   el.style.opacity = 0;
-//   el.style.display = display || "block";
-//
-//   (function fade() {
-//     var val = parseFloat(el.style.opacity);
-//     if (!((val += .1) > 1)) {
-//       el.style.opacity = val;
-//       requestAnimationFrame(fade);
-//     }
-//   })();
-// }
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
 
-function animationStatus() {
-	let el = document.getElementById('links');
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
 
-	if (status = 'active') {
-		status = 'complete'
-	}
-	// console.log(status);
-	if (status = 'complete') {
-		fadeIn(el);
-	}
-}
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
 
-// var btn = document.querySelector('.js-btn');
-// var el = document.querySelector('.js-fade');
-//
-// btn.addEventListener('click', function(e){
-//   if(el.classList.contains('is-hidden')){
-//     fadeIn(el);
-//   }
-//   else {
-//     fadeOut(el);
-//   }
-// });
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
 
-new TypeIt("#hero-header", {
-	speed: 45,
-	lifelike: true,
-	html: true,
-	deleteSpeed: 80
-})
-.type("Hello.")
-.pause(50)
-.type(" I'm <span>Halie Koehler</span>,")
-.pause(100)
-.break()
-.type("a UI/UX Designer,")
-.pause(150)
-.options({speed: 45})
-.type(" Front End Developer,")
-.pause(150)
-.type(" and")
-.pause(100)
-.type(" Visual Artist.")
-.pause(1000)
-.options({afterComplete: function(step, instance) {
-	// animationStatus();
-	instance.destroy();
-}})
-.go();
+      });
+    });
+  }
 
-})();
+});
