@@ -1,5 +1,6 @@
 /* Buttons & Special Links */
-.button {
+button.button,
+a.button {
     &.is-primary {
     color: #ffffff;
     background-color: rgba($purple,1);
@@ -10,14 +11,20 @@
     }
 
     &.is-outlined {
+      background-color: transparent;
       border-color: $purple;
       border: 1px solid;
-      // border-radius: 12px;
       color: $purple;
       &:hover {
           background-color: $purple;
           color: #ffffff;
           border-color: $purple;
+      }
+      &:visited,
+      &:active {
+        background-color: transparent !important;
+        border-color: $purple !important;
+
       }
     }
     @include sm {

@@ -15,7 +15,7 @@ html, body {
 /* Headers and Such */
 h1.title {
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #1F1926;
 }
 h1.title span {
@@ -23,14 +23,14 @@ h1.title span {
 }
 @media (min-width: 576px) {
   h1.title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
 h2.subtitle {
   font-size: 1em;
   font-weight: 400;
-  color: #1F1926;
+  color: #372B47;
 }
 @media (min-width: 576px) {
   h2.subtitle {
@@ -81,27 +81,39 @@ a.link:hover {
 }
 
 /* Buttons & Special Links */
-.button.is-primary {
+button.button.is-primary,
+a.button.is-primary {
   color: #ffffff;
   background-color: #6733d8;
   font-weight: 400;
   box-shadow: 3px 0 10px rbga(#1F1926, 0.5);
 }
-.button.is-primary:hover {
+button.button.is-primary:hover,
+a.button.is-primary:hover {
   background-color: #372B47;
 }
-.button.is-primary.is-outlined {
+button.button.is-primary.is-outlined,
+a.button.is-primary.is-outlined {
+  background-color: transparent;
   border-color: #6733D8;
   border: 1px solid;
   color: #6733D8;
 }
-.button.is-primary.is-outlined:hover {
+button.button.is-primary.is-outlined:hover,
+a.button.is-primary.is-outlined:hover {
   background-color: #6733D8;
   color: #ffffff;
   border-color: #6733D8;
 }
+button.button.is-primary.is-outlined:visited, button.button.is-primary.is-outlined:active,
+a.button.is-primary.is-outlined:visited,
+a.button.is-primary.is-outlined:active {
+  background-color: transparent !important;
+  border-color: #6733D8 !important;
+}
 @media (min-width: 576px) {
-  .button.is-primary {
+  button.button.is-primary,
+a.button.is-primary {
     font-size: 1.25em;
   }
 }
