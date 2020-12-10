@@ -143,6 +143,10 @@ nav .navbar-burger:hover {
 #index h1#hero-header span {
   color: #6733D8;
 }
+#index .modal-content {
+  background-color: white;
+  padding: 2em;
+}
 #index #main-hero .container {
   max-width: 800px;
   min-height: 20vh;

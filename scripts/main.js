@@ -24,4 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const contact = document.getElementById('contact-link');
+  const close = document.getElementById('contact-close');
+  const modal = document.getElementById('contact-modal');
+  // const background = document.getElementbyId('contact-background');
+
+  contact.onclick = function(){
+    modal.classList.add('is-active');
+  };
+
+  close.onclick = function () {
+    modal.classList.remove('is-active');
+  }
+
+  // background.onclick = function () {
+  //   modal.classList.remove('is-active');
+  // }
+
 });
