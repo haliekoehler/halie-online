@@ -31,14 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   contact.onclick = function(){
     modal.classList.add('is-active');
+    // document.getElement('html').classlist.add('is-clipped');
   };
 
   close.onclick = function () {
-    modal.classList.remove('is-active');
+    modal.classList.toggle('is-active');
   }
 
   // background.onclick = function () {
-  //   modal.classList.remove('is-active');
+  //   modal.classList.toggle('is-active');
   // }
 
 });

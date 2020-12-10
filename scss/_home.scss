@@ -25,6 +25,11 @@
     }
   }
 
+	#email-link {
+		font-weight: bold;
+		color: $purple;
+	}
+
 	#text {
 		height: 100%;
 		min-height: 20vh;
@@ -35,7 +40,7 @@
 	}
 
 	#mobile-image {
-		max-width: 800px;
+		// max-width: 800px;
 		display: block;
 		margin: 0 auto;
 	}
