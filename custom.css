@@ -60,7 +60,6 @@ a.link:hover {
 }
 
 #icon-level {
-  max-width: 400px;
   margin: 0 auto;
   padding: 1.5em;
 }
@@ -68,7 +67,12 @@ a.link:hover {
   padding: 1em;
 }
 #icon-level a.icon i {
-  font-size: 1.1em;
+  font-size: 1.5em;
+  padding: 1em;
+}
+#icon-level a.icon p {
+  display: inline-block;
+  font-size: 1em;
 }
 
 .card .title {
